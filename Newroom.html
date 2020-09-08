@@ -5,34 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add new room</title>
 </head>
-<body style="background-image: url('proyecto-g/img/bg.jpg'); background-repeat: no-repeat;">
-    <header class="header" style="color: white;" >
-        <a href="#"><img src="/img2/menu-icon.jpeg" width="2%" alt="Hamb-menu" height="2%">Menu</a></header>
+<body >
+    <header>
+  <img src="/img2/menu-icon.jpeg" width="2%" alt="Hamb-menu" height="2%">Menu</header>
+<div>
+  <h2><img src="img2/user-icon.png" height="40px"> Username</h2>
+</div>
+<ul>
+  <li ><a href="#">Login</li>
+  <li ><a href="#">Rooms</li>
+  <li ><a href="#">Create new Room</li>
+  <li ><a href="#">Settings</li>
+</ul>
 
-    <a href="proyecto-g/managementRoom.html">
+    <a href="#">
         <img src="/img2/back-arrow.png" width="3%" alt="Hamb-menu" height="5%"> </a>
 
-        <h1 style="color: white; text-align: center;">Welcome</h1>
-        <h2 style="color: white; text-align: center;">To create a new room fill <br>
-            the following form </h2>   
+    <div class="createroom-box">
 
-        <div class="createroom-box">
+    <label for="rooms">Rooms:
+        <select name="rooms" id="rooms">
+            <option value="roomnumber">Room #x</option>
+        </select>
+    </label>
 
-           
-    <form>
-      <label for="roomName">Name:</label>
-      <input type="text" placeholder="Enter room name" />
-      <label for="Date">Date:</label>
-      <input type="Date" placeholder="day/month/year" />
-      <label for="time">Time:</label>
-      <input for="time" placeholder="Enter the time">
-      <label for="Expdate">Expiration time:</label>
-      <input for="Expdate" placeholder="Enter the expiration date">
-      <a href="managementRoom.html"><input type="button" value="Create"></a>
-      <a href="managementRoom.html"><input type="button" value="Cancel" ></a>
+    <div class="users-box">
+        <table style="widows: 50%; border-spacing: 10px">
+        <tr>
+            <th colspan="5">Table name</th>
+        
+        </tr>
+    
+        <tr>
+            <td><img src="img2/user-icon.png" alt="user-icon.png" height="50px"></td>
+            <td>Maria</td>
+            <td>Oscar</td>
+            <td>Omar</td>
+            <td>Henry</td>
+            
+        </tr>
+        </table>
+    </div>
 
-    </form>
-        </div>
+<button>Add</button>
+
+<form>
+
+    <label for="RoomName">Name:</label>
+    <input type="text" placeholder="Enter a name" />
+    <a href="#"><input type="button" value="Add"></a>
+    <a href="#"><input type="button" value="Cancel" ></a>
+</form>
+
+    <footer>
+        <ul>
+            <li ><a href="#">1</li>
+            <li ><a href="#">2</li>
+            <li ><a href="#">3</li>
+            <li ><a href="#">4</li>
+          </ul>
+          
+    </footer>
     
     
 </body>
