@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin dashboard</title>
+    
 </head>
 <body >
       <header>
@@ -11,23 +12,121 @@
 <div>
     <h2><img src="img2/user-icon.png" height="40px"> Username</h2>
 </div>
-<ul>
-    <li ><a href="#">Login</li>
-    <li ><a href="#">Rooms</li>
-    <li ><a href="#">Create new Room</li>
-    <li ><a href="#">Settings</li>
-</ul>
-
-
+<nav class="menu">
+    <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Rooms</a></li>
+        <li><a href="#">Create new Room</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+</nav>
 </header>
+<div class="button-back-content">
+    <div class="button-back">
 
-            <ul>
-                <li class="items1"><a href="#">Users</li>
-                <li class="items2"><a href="#">dashboard</li>
-                <li class="items3"><a href="#">Groups</li>
-                <li class="items4"><a href="#">Settings</li>
-                <li class="items5"><a href="#">Create a new room </li>
-            </ul>
+        <figure>
+            <img src="https://image.freepik.com/free-icon/arrow-left-thick_318-8506.jpg" width="30" height="30"
+                alt="button back">
+        </figure>
+
+    </div>
+
+    <main class="statistics-admin">
+        <div>
+        <table cellpadding="15" style="background-color:blue">
+            <thead>
+                <tr>
+                    <th>Total players</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="middle">560</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div>
+        <table cellpadding="15" style="background-color:orange">
+            <thead>
+                <tr>
+                    <th colspan="2">Device used</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="middle">PC</td>
+                    <td>56%</td>
+                </tr>
+                <tr>
+                    <td align="middle">Laptop</td>
+                    <td>44%</td>
+                </tr>
+
+            </tbody>
+        </table>
+        </div>
+
+        <div>
+        <table cellpadding="15" style="background-color:purple">
+            <thead>
+                <tr>
+                    <th>Number of tables created</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="middle">60</td>
+                </tr>
+            </tbody>
+        </table>
+        </div> 
+
+        <div>
+        <table cellpadding="15" style="background-color:red">
+            <thead>
+                <tr>
+                    <th>Daily reports</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="middle">10</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div>
+        <canvas id="AdminGraphs" width="200" height="100" style="border:1px solid #000000;"></canvas> 
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas> 
+        </div>
+
+        <div>
+            <table style="background-color: gray;" cellpadding="15">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Gamers</th>
+                        <th>Rooms</th>
+                        <th>GameTables</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="middle">July 5th, 2020</td>
+                        <td align="middle">80</td>
+                        <td align="middle">21</td>
+                        <td align="middle">80</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </main>
+
+        
 
             <footer>
                 <img src="img2/uca-logo.png" alt="Logo UCA" height="5%" width="5%" >
